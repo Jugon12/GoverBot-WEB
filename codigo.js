@@ -9,8 +9,8 @@ function pruebaDesdeWeb() {
 function pruebaDesdeWeb2() {
     console.log("pito2")
     
-    // const contenido = document.getElementById('contenidoTextarea').value;
-    const contenido = "Mensaje de prueba sacado de la web";
+    const contenido = document.getElementById('textarea2').value;
+    // const contenido = "Mensaje de prueba sacado de la web";
     fetch('http://localhost:3000/enviar-contenido', {
         method: 'POST',
         headers: {
