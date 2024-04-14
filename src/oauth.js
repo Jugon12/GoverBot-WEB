@@ -69,7 +69,7 @@ app.get('/api/session', (req, res) => {
 });
 
 app.get('/api/session/end', (req, res) => {
-  console.log('Ending session...')
+  console.log(`Ending session with ID ${sessionId}: Session Expired`)
   const sessionId = req.cookies.session
   delete sessions[sessionId]; // Eliminar la sesión
   res.clearCookie('session');
