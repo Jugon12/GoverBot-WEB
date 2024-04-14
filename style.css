@@ -1,3 +1,37 @@
+:root{
+    --GobernBotBackground: #fef2ea;
+    --GobernBotBetween : #ae855e;
+    --GobernBotLogo : #825021;
+}
+
 body{
-    background-color: #002440;
+    background-color: var(--GobernBotBackground);
+}
+#LogInDiv{
+    background-color: var(--GobernBotLogo);
+
+    margin-top: 200px;
+    margin-left: 40%;
+    margin-right: 40%;
+    min-height: 500px;
+
+    border-radius: 25px;
+    box-shadow: 0px 10px 20px var(--GobernBotLogo);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.LogInButton{
+    width: 50%;
+    height: 50px;
+
+    border-radius: 10px;
+    border-style: none;
+
+    background-color: var(--GobernBotBackground);
+
+    font-size: x-large;
+    font-weight: bolder;
 }

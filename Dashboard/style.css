@@ -1,3 +1,84 @@
+:root{
+    --GobernBotBackground: #fef2ea;
+    --GobernBotBetween : #ae855e;
+    --GobernBotLogo : #825021;
+
+    --sideBarWidth : 250px;
+    --sideBarMargin : 25px;
+}
+*{
+    margin: 0;
+}
 body{
-    background-color: #002440;
+    background-color: var(--GobernBotBackground);
+}
+
+
+
+#SideBar{
+    position: fixed;
+    width: calc( var(--sideBarWidth) - var(--sideBarMargin));
+    top: 0;
+    bottom: 0;
+
+    background-color: var(--GobernBotBetween);
+    overflow-y: scroll;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+#SideBar::-webkit-scrollbar{
+    background-color: #0000;
+    width: 10px;
+}
+#SideBar::-webkit-scrollbar-thumb{
+    background-color: var(--GobernBotLogo);
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#OptionsContainer{
+    /* background-color: var(--GobernBotBetween); */
+
+    padding-top: 200px;
+    padding-bottom: 50px;
+    margin-left: var(--sideBarWidth);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    overflow-x: scroll;
+}
+#OptionsContainer::-webkit-scrollbar{
+    background-color: #0000;
+}
+#OptionsContainer::-webkit-scrollbar-thumb{
+    background-color: var(--GobernBotBetween);
+    border-radius: 50px;
+}
+.Option{
+    background-color: var(--GobernBotLogo);
+
+    min-width: 500px;
+    height: 100%;
+    margin-left:  20px;
+    margin-right: 20px;
+    margin-top: 10px;
+
+    border-radius: 25px;
+    box-shadow: 0px 10px 20px var(--GobernBotLogo);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
