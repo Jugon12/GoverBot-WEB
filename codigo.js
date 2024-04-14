@@ -1,30 +1,4 @@
-function pruebaDesdeWeb() {
-    console.log("pito")
-    fetch('http://localhost:3000/enviar-mensaje')
-        .then(response => response.text())
-        .then(message => console.log(message))
-        .catch(error => console.error('Error:', error));
-    console.log("poto")
-}
-function pruebaDesdeWeb2() {
-    console.log("pito2")
-    
-    const contenido = document.getElementById('textarea2').value;
-    // const contenido = "Mensaje de prueba sacado de la web";
-    fetch('http://localhost:3000/enviar-contenido', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ contenido: contenido })
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Error al enviar contenido');
-        }
-        console.log('Contenido enviado correctamente');
-    })
-    .catch(error => console.error('Error:', error));
-    
-    console.log("poto2")
-}
+function redirectToWeb() {
+    // Replace 'https://example.com' with the URL you want to redirect to
+    window.location.href = 'https://discord.com/oauth2/authorize?client_id=1221406215892893726&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A1500%2Fapi%2Fauth%2Fdiscord%2Fredirect&scope=identify'
+  }
