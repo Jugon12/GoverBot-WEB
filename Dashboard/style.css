@@ -13,8 +13,6 @@ body{
     background-color: var(--GobernBotBackground);
 }
 
-
-
 #SideBar{
     position: fixed;
     width: calc( var(--sideBarWidth) - var(--sideBarMargin));
@@ -34,16 +32,6 @@ body{
     background-color: var(--GobernBotLogo);
     border-radius: 50px;
 }
-
-
-
-
-
-
-
-
-
-
 
 #OptionsContainer{
     /* background-color: var(--GobernBotBetween); */
